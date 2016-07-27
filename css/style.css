@@ -1,0 +1,23 @@
+body {
+  background-color: lightpink;
+}
+.img-responsive {
+  height:200px;
+  width:180px;
+}
+
+.btn-block {
+  font-size: 25px;
+}
+
+.gameRunning {
+  border: 6px solid hotpink;
+}
+
+.gameNotRunning {
+  border: 6px solid yellow;
+}
+
+#verifyModal .img-responsive {
+  width: auto;
+}
