@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click The Easter Bunny</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-large" data-toggle="modal" data-target="#myModal">Click Me</button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Are You Ready to Click Some Easter Eggs?</h4>
+                  </div>
+                  <div class="modal-body">
+                    <h1>Welcome to Click the Easter Bunny!</h1>
+                    <p>Each player has just twenty seconds to click on as many easter eggs as they can! Try to click the Easter Bunny too before the time is up!</p>
+                    <p>At the end of each player's time, their score will be returned to them.</p>
+                    <p>Good luck, and get clicking!</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Click The Easter Bunny!</div>
+          <div class="panel-body">
+            <div class="startButton">
+              <h1>Click the start button to start the game. Good luck!</h1>
+              <button class="btn btn-block">Start</button>
+            </div>
+            <h2>Score: <span class="score"></span></h2>
+          </div>
+        </div>
+      </div>      
+      <div class="row-fluid">
+        <div class="table-responsive">
+          <table id="game-table" class="table table-bordered">
+            <tr>
+              <td>
+                <img id="egg1" src="./images/easterEgg01.png"></td>
+              <td>
+                <img id="egg2" src="./images/easterEgg02.png"></td>
+              <td>
+                <img id="egg3" src="./images/easterEgg06.png"></td>
+              <td>
+                <img id="egg4" src="./images/easterEgg07.png"></td>
+              <td>
+                <img id="egg5" src="./images/easterEgg08.png"></td>
+            </tr>
+            <tr>
+              <td>
+                <img id="egg6" src="./images/easterEgg09.png"></td>
+              <td>
+                <img id="egg7" src="./images/easterEgg10.png"></td>
+              <td>
+                <img id="egg8" src="./images/easterEgg11.png"></td>
+              <td>
+                <img id="egg9" src="./images/easterEgg12.png"></td>
+              <td>
+                <img id="egg10" src="./images/easterEgg13.png"></td>
+            </tr>                  
+            <tr>
+              <td>
+                <img id="egg11" src="./images/easterEgg14.png"></td>
+              <td>
+                <img id="egg12" src="./images/easterEgg15.png"></td>
+              <td>
+                <img id="easterbunny" src="./images/easterBunny.png"></td>
+              <td>
+                <img id="egg13" src="./images/easterEgg16.png"></td>
+              <td>
+                <img id="egg14" src="./images/easterEgg17.png"></td>
+            </tr>
+            <tr>
+              <td>
+                <img id="egg15" src="./images/easterEgg18.png"></td>
+              <td>
+                <img id="egg16" src="./images/easterEgg19.png"></td>
+              <td>
+                <img id="egg17" src="./images/easterEgg20.png"></td>
+              <td>
+                <img id="egg18" src="./images/easterEgg21.png"></td>
+              <td>
+                <img id="egg19" src="./images/easterEgg22.png"></td>
+            </tr>
+          </table>
+        </div>
+      <!-- score modal -->
+      <div class="modal fade bs-example-modal-sm" id="scoreModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Your Score</h4>
+            </div>
+            <div class="modal-body">
+            <!-- score -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal --> 
+    </div>                         
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+    <script type="text/javascript" src="js/modal.js"></script> 
+    <script type="text/javascript" src="js/timer.js"></script>
+  </body>
+</html>
